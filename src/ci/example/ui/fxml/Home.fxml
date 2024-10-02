@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ci.example.controllers.ui.HomeUIController">
+  <children>
+    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="423.0" prefWidth="640.0" VBox.vgrow="ALWAYS">
+      <children>
+            <HBox alignment="CENTER" prefHeight="59.0" prefWidth="640.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="TEXT_ONLY" prefHeight="34.0" prefWidth="306.0" text="EXAMEN NATIONAL">
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Rectangle fx:id="codeColor" arcHeight="5.0" arcWidth="5.0" fill="#d1d1d1" height="42.0" smooth="false" stroke="TRANSPARENT" strokeType="INSIDE" width="166.0" />
+               </children>
+            </HBox>
+            <VBox layoutY="164.0" prefHeight="167.0" prefWidth="640.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="41.0" prefWidth="638.0" text="Taux de réussite" textAlignment="CENTER">
+                     <font>
+                        <Font name="Calibri" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label id="successRate" fx:id="successRate" alignment="CENTER" prefHeight="129.0" prefWidth="640.0" text="25.78 %" textAlignment="CENTER" textFill="#059e00">
+                     <font>
+                        <Font name="Calibri Bold" size="96.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER" layoutY="349.0" prefHeight="59.0" prefWidth="640.0">
+               <children>
+                  <Button id="showResultBtn" mnemonicParsing="false" onAction="#doViewResult" prefHeight="47.0" prefWidth="172.0" text="Consulter mon résultat">
+                     <font>
+                        <Font name="Calibri" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <TextField fx:id="mat" layoutX="206.0" layoutY="107.0" prefHeight="26.0" prefWidth="215.0" />
+            <Label layoutX="256.0" layoutY="82.0" text="Entrez votre matricule">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+            </Label>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>

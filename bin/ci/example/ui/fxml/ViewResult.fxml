@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ci.example.controllers.ui.ViewResultUIController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="423.0" prefWidth="640.0" VBox.vgrow="ALWAYS">
+         <children>
+            <HBox alignment="CENTER" prefHeight="59.0" prefWidth="640.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="TEXT_ONLY" prefHeight="34.0" prefWidth="306.0" text="EXAMEN NATIONAL">
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Rectangle fx:id="codeColor" arcHeight="5.0" arcWidth="5.0" fill="#d1d1d1" height="42.0" smooth="false" stroke="TRANSPARENT" strokeType="INSIDE" width="166.0" />
+               </children>
+            </HBox>
+            <VBox layoutY="71.0" prefHeight="278.0" prefWidth="640.0">
+               <children>
+                  <Label fx:id="userName" alignment="CENTER" prefHeight="62.0" prefWidth="640.0" text="Label" />
+                  <Label fx:id="userBirthDate" alignment="CENTER" prefHeight="33.0" prefWidth="640.0" text="Label" />
+                  <Label fx:id="userMat" alignment="CENTER" prefHeight="64.0" prefWidth="640.0" text="Label" />
+                  <Label fx:id="userEtab" alignment="CENTER" prefHeight="44.0" prefWidth="640.0" text="Label" />
+                  <Label fx:id="resultMsg" alignment="CENTER" prefHeight="74.0" prefWidth="640.0" text="Label" />
+               </children>
+            </VBox>
+            <HBox alignment="CENTER" layoutY="357.0" prefHeight="59.0" prefWidth="640.0">
+               <children>
+                  <Button id="showResultBtn" fx:id="showResultBtn" mnemonicParsing="false" prefHeight="47.0" prefWidth="172.0" text="Imprimer">
+                     <font>
+                        <Font name="Calibri" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
